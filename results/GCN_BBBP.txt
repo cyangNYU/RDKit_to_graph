@@ -1,0 +1,20 @@
+
+batch_size = 32
+AdamOptimizer
+learning_rate = 0.001, weight_decay = 5e-4
+epochs=2000
+
+pooling= global_mean_pool :
+  train: 0.904
+  val  : 0.907
+  test : 0.574
+
+pooling= global_add_pool :
+  train: 0.909
+  val  : 0.941
+  test : 0.598
+
+pooling= global_max_pool :
+  train: 0.891 
+  val  : 0.897
+  test : 0.569
